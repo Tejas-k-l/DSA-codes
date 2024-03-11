@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main() {
-    int a, b, c;
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &a, &b, &c);
-    printf("Original numbers: a = %d, b = %d, c = %d\n", a, b, c);
-    a = a+b+c;
-    b = a-b-c;
-    c = a-b-c;
-    a = a-b-c;
-    printf("Swapped numbers: a = %d, b = %d, c = %d\n", a, b, c);
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    printf("Original numbers: a = %d, b = %d\n", a, b);
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("Swapped numbers: a = %d, b = %d\n", a, b);
     return 0;
 }
+
