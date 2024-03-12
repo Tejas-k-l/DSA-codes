@@ -1,0 +1,38 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <string.h> 
+
+struct Student
+{ 
+	char* name; 
+	int roll_number; 
+	int age; 
+}; 
+
+int main() 
+{ 
+	int n = 3; 
+	struct Student student[n]; 
+
+	student[0].roll_number = 1; 
+	student[0].name = "Geeks1"; 
+	student[0].age = 10; 
+
+	student[1].roll_number = 2; 
+	student[1].name = "Geeks2"; 
+	student[1].age = 11; 
+	
+	student[2].roll_number = 3; 
+	student[2].name = "Geeks3"; 
+	student[2].age = 13; 
+
+	printf("Student Records:\n\n"); 
+	for (int i = 0; i < n; i++) { 
+		printf("\tName : %s", student[i].name); 
+		printf("\tRoll Number : %d", 
+			student[i].roll_number); 
+		printf("\tAge : %d\n", student[i].age); 
+	} 
+
+	return 0; 
+}
